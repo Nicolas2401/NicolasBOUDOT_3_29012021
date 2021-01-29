@@ -1,0 +1,21 @@
+{
+  "name": "nicolasboudot_3_29012021",
+  "version": "1.0.0",
+  "description": "P3 - OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
+    // "sass-min": "sass --watch ./sass/main.scss:.public/css/style.css compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas2401/NicolasBOUDOT_3_29012021.git"
+  },
+  "author": "Nicolas BOUDOT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas2401/NicolasBOUDOT_3_29012021/issues"
+  },
+  "homepage": "https://github.com/Nicolas2401/NicolasBOUDOT_3_29012021#readme"
+}
