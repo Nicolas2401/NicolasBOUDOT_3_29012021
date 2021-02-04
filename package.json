@@ -4,9 +4,8 @@
   "description": "P3 - OpenClassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
-    // "sass-min": "sass --watch ./sass/main.scss:.public/css/style.css compressed",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "repository": {
     "type": "git",
