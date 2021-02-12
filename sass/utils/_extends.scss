@@ -1,0 +1,37 @@
+// Regroupe les classes réutilisables un peu partout
+
+/* ----------------------------- */
+/*          SOMMAIRE             */
+/* ----------------------------- */
+
+/* 
+    Images
+
+*/
+
+
+/* Images */
+
+// L'image prend toutes la place disponible : cover
+.cover {
+    overflow: hidden;
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Agrandissement de l'image au survol
+.zoom-in {
+    overflow: hidden;
+
+    & img {
+        transition: transform .4s;
+    }
+
+    &:hover img {
+        transform: scale(1.2);
+    }
+}

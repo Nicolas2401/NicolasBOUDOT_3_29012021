@@ -1,0 +1,42 @@
+.footer {
+    background-color: map-get($color, grey-800);
+    padding: 30px 15px;
+
+    &__logo {
+        margin-bottom: 15px;
+
+        & svg {
+            height: 1.8rem;
+            width: auto;
+
+            & path {
+                fill: map-get($color, white);
+            }
+        }
+    }
+
+    &__navigation  {
+
+        &__liste {
+            list-style: none;
+            padding: 0;
+
+            &__item {
+                margin-bottom: 5px;
+
+                &__lien {
+                    color: map-get($color, white);
+
+                    &:hover {
+                        color: map-get($color, white);
+                        text-decoration: none;
+                    }
+
+                    & > i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

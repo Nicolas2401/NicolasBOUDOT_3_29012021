@@ -1,0 +1,48 @@
+.header {
+
+    &__logo {
+        position: relative;
+        text-align: center;
+        padding: 15px;
+
+        &__retour {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+
+            & a {
+                color: map-get($color, grey-800);
+            }
+
+            & > i {
+                color: map-get($color, grey-800);
+                font-size: 1.8rem;
+            }
+        }
+
+        &__image {
+
+            & svg path {
+                fill: map-get($color, black-100);
+            }
+        }
+    }
+
+    &__localisation {
+        background-color: map-get($color, grey-200);
+        text-align: center;
+        padding: 10px 15px;
+
+        &__ville {
+            position: relative;
+
+            & > i {
+                position: absolute;
+                top: 50%;
+                left: calc(-#{$icons-min-width} - 10px);
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

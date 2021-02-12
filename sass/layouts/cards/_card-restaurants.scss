@@ -1,0 +1,82 @@
+.card-restaurant {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px map-get($color, grey-200);
+    margin-bottom: 15px;
+    overflow: hidden;
+
+    &__label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        background: map-get($color, 3);
+        color: darken(map-get($color, 3), 50%);
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 3px;
+        padding: 3px 10px;
+        z-index: 1;
+
+        .is-new & {
+            display: block;
+        }
+    }
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 56.25%;
+            width: 100%;
+        }
+        
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    &__meta {
+        background-color: map-get($color, white );
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1;
+        padding: 15px 20px 15px 10px;
+
+        &__infos {
+
+            &__titre {
+
+
+                & a {
+                    color: map-get($color, grey-800);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__like {
+
+            & > i {
+                font-size: 2rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background: -webkit-linear-gradient(-100deg, map-get($color, 1) 35%, map-get($color, 2));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

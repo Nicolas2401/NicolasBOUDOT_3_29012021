@@ -1,0 +1,57 @@
+// Crée les variables réutiliser dans le reste du codebase
+
+/* ----------------------------- */
+/*          SOMMAIRE             */
+/* ----------------------------- */
+
+/* 
+    Couleurs
+    Fonts
+    Icons
+
+*/
+
+
+
+// ----------------
+// Couleurs
+// ----------------
+
+$color: (
+    1: #9356DC,
+    2: #FF79DA,
+    3: #99E2D0,
+    //3--darken: #008766,
+
+    white: #ffffff,
+    white-900: #f6f6f6,
+    grey-200: #eaeaea,
+    grey-600: #7e7e7e,
+    grey-800: #353535,
+    black: #000000,
+    black-100: #101010,
+);
+
+
+
+// ----------------
+// Fonts
+// ----------------
+
+$font-family: (
+    headings: ("Shrikhand", cursive),
+    base: ("Roboto", sans-serif),
+);
+
+$font-weight: (
+    light: 300,
+    bold: 700,
+);
+
+
+
+// ----------------
+// Icons
+// ----------------
+
+$icons-min-width: 20px;

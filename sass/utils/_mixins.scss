@@ -1,0 +1,34 @@
+// Crée des btns avec fond dégradé
+@mixin btn-gradient ($bg1, $bg2, $font-color) {
+    &-color-#{$bg1}-gradient-color-#{$bg2} {
+        background: linear-gradient(-10deg, map-get($color, $bg1) 0%, map-get($color, $bg2) 80%);
+        color: map-get($color, $font-color);
+        transition: background .4s;
+
+        &:hover {
+            background: linear-gradient(-10deg, lighten(map-get($color, $bg1), 5%) 0%, lighten(map-get($color, $bg2), 5%) 80%);
+            // background: linear-gradient(10deg, map-get($color, $bg1) 0%, map-get($color, $bg2) 80%);
+            color: map-get($color, $font-color);
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------------------------------
+
+// Expérimantation : Génération de tous les boutons possible avec les couleurs
+// Résultat : Fonctionne mais créer beaucoup de bouton. Les styles ne sont pas forcément pertinents
+
+// @mixin btn-gradient($map) {
+//     @each $key, $value in $map {
+//         &-color-#{$key} {
+//             @each $key2, $value2 in $map {
+//                 &-gradient-color-#{$key2} {
+//                     @if $key != $key2 {
+//                         background: linear-gradient(-10deg, map-get($map, $key) 0%, map-get($map, $key2) 80%);
+//                         color: map-get($map, white);
+//                     }   
+//                 }
+//             }
+//         }
+//     }
+// }
