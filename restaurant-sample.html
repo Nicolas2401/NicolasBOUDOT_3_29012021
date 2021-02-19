@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood!</title>
+    <title>Ohmyfood! - $title-page</title>
     <!-- Google Font - Shrikhand | Roboto -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -15,7 +15,18 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="home">
+<!-- Variables à chercher et remplacer après duplication -->
+<!-- 
+    $title-page
+    $url-img
+    $alt-img
+    $titre-restaurant
+    $titre-plat
+    $info-supp
+    $prix
+ -->
+
+<body class="la-palette-du-gout">
     <header class="header">
         <div class="header__logo">
             <div class="header__logo__retour">
@@ -36,126 +47,74 @@
                 </svg>
             </div>
         </div>
-        <div class="header__localisation">
-            <span class="header__localisation__ville">
-                <i class="fas fa-map-marker-alt"></i>
-                Paris, Belleville
-            </span>
-        </div>
     </header>
 
     <main>
-        <section class="reservation">
-            <h1 class="reservation__titre titre-section">Réserver le menu qui vous convient</h1>
-            <p class="reservation__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#restaurants" class="reservation__bouton btn btn-color-1-gradient-color-2" title="Explorer nos restaurants">Explorer nos restaurants</a>
-        </section>
-
-        <section class="fonctionnement">
-            <h2 class="fonctionnement__titre titre-section">Fonctionnement</h2>
-            <div class="fonctionnement__etapes">
-                <span class="fonctionnement__etapes__bouton" title="Choissisez un restaurant">
-                    <i class="fas fa-mobile-alt"></i>
-                    Choissisez un restaurant
-                </span>
-
-                <span class="fonctionnement__etapes__bouton" title="Composez votre menu">
-                    <i class="fas fa-list-ul"></i>
-                    Composez votre menu
-                </span>
-
-                <span class="fonctionnement__etapes__bouton" title="Dégustez au restaurant">
-                    <i class="fas fa-store"></i>
-                    Dégustez au restaurant
-                </span>
+        <div class="banniere">
+            <div class="banniere__image format format--16-9 cover">
+                <img src="$url-img" alt="$alt-img">
             </div>
-        </section>
+        </div>
 
-        <section id="restaurants" class="restaurants">
-            <h2 class="restaurants__titre titre-section">Restaurants</h2>
-            <div class="restaurants__liste">
-                <div class="card-restaurant is-new box-shadow">
-                    <div class="card-restaurant__image format format--16-9 cover zoom-in">
-                        <span class="card-restaurant__image__label">Nouveau</span>
-                        <a href="./la-palette-du-gout.html" title="La palette du goût">
-                            <img src="./img/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
-                        </a>
-                    </div>
-                    <div class="card-restaurant__meta">
-                        <div class="card-restaurant__meta__infos">
-                            <h3 class="card-restaurant__meta__infos__titre">
-                                <a href="./la-palette-du-gout.html" title="La palette du goût">La palette du goût</a>
-                            </h3>
-                            <span class="card-restaurant__meta__infos__ville">Ménilmontant</span>
-                        </div>
-                        <div class="card-restaurant__meta__like btn-like">
-                            <i class="far fa-heart"></i>
+        <section class="restaurant">
+            <div class="restaurant__heading">
+                <h1 class="restaurant__heading__titre">$titre-restaurant</h1>
+                <div class="btn-like">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="restaurant__menu">
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Entrées</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">$titre-plat</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">$info-supp</span>
+                            <span class="card-plat__infos__prix">$prix</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-restaurant is-new box-shadow">
-                    <div class="card-restaurant__image format format--16-9 cover zoom-in">
-                        <span class="card-restaurant__image__label">Nouveau</span>
-                        <a href="./la-note-enchantee.html" title="La note enchantée">
-                            <img src="./img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
-                        </a>
-                    </div>
-                    <div class="card-restaurant__meta">
-                        <div class="card-restaurant__meta__infos">
-                            <h3 class="card-restaurant__meta__infos__titre">
-                                <a href="./la-note-enchantee.html" title="La note enchantée">La note enchantée</a>
-                            </h3>
-                            <span class="card-restaurant__meta__infos__ville">Charonne</span>
-                        </div>
-                        <div class="card-restaurant__meta__like btn-like">
-                            <i class="far fa-heart"></i>
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Plats</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">$titre-plat</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">$info-supp</span>
+                            <span class="card-plat__infos__prix">$prix</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-restaurant box-shadow">
-                    <div class="card-restaurant__image format format--16-9 cover zoom-in">
-                        <span class="card-restaurant__image__label">Nouveau</span>
-                        <a href="./a-la-francaise.html" title="À la française">
-                            <img src="./img/restaurants/a-la-francaise.jpg" alt="À la française">
-                        </a>
-                    </div>
-                    <div class="card-restaurant__meta">
-                        <div class="card-restaurant__meta__infos">
-                            <h3 class="card-restaurant__meta__infos__titre">
-                                <a href="./a-la-francaise.html" title="À la française">À la française</a>
-                            </h3>
-                            <span class="card-restaurant__meta__infos__ville">Cité Rouge</span>
-                        </div>
-                        <div class="card-restaurant__meta__like btn-like">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proposition 2 : Effet de zoom au survol de toute la carte -->
-                <div class="card-restaurant zoom-in box-shadow">
-                    <div class="card-restaurant__image format format--16-9 cover">
-                        <span class="card-restaurant__image__label">Nouveau</span>
-                        <a href="./le-delice-des-sens.html" title="Le délice des sens">
-                            <img src="./img/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
-                        </a>
-                    </div>
-                    <div class="card-restaurant__meta">
-                        <div class="card-restaurant__meta__infos">
-                            <h3 class="card-restaurant__meta__infos__titre">
-                                <a href="./le-delice-des-sens.html" title="Le délice des sens">Le délice des sens</a>
-                            </h3>
-                            <span class="card-restaurant__meta__infos__ville">Folie-Méricourt</span>
-                        </div>
-                        <div class="card-restaurant__meta__like btn-like">
-                            <i class="far fa-heart"></i>
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Desserts</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">$titre-plat</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">$info-supp</span>
+                            <span class="card-plat__infos__prix">$prix</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="restaurant__bouton">
+                <a href="" class="btn btn-color-1-gradient-color-2" title="Commander">Commander</a>
+            </div>
         </section>
+
+        <!-- Font awesome -->
+        <i class="fas fa-map-marker-alt"></i>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-utensils"></i>
+        <i class="fas fa-hands-helping"></i>
+        <i class="fas fa-mobile-alt"></i>
+        <i class="fas fa-list-ul"></i>
+        <i class="fas fa-store"></i>
     </main>
 
     <footer class="footer">

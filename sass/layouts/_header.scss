@@ -1,4 +1,5 @@
 .header {
+    background-color: map-get($color, white);
 
     &__logo {
         position: relative;
@@ -18,6 +19,10 @@
             & > i {
                 color: map-get($color, grey-800);
                 font-size: 1.8rem;
+            }
+
+            .home & {
+                display: none;
             }
         }
 

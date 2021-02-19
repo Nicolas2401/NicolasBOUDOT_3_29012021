@@ -1,0 +1,29 @@
+.card-plat {
+    background-color: map-get($color, white);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px 10px 10px;
+
+    &__titre {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    &__infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__details {
+            font-weight: map-get($font-weight, light);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 15px;
+        }
+
+        &__prix {
+            font-weight: map-get($font-weight, bold);
+        }
+    }
+}

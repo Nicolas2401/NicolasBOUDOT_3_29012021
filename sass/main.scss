@@ -94,6 +94,7 @@
 
     /* 5.3 - Cards */
     @import "layouts/cards/card-restaurants";
+    @import "layouts/cards/card-plats";
     
 
 
@@ -102,3 +103,5 @@
 */
     /* 6.1 - Accueil */
     @import "pages/accueil.scss";
+    /* 6.2 - Restaurants */
+    @import "pages/restaurants.scss";

@@ -9,6 +9,8 @@
     Fonts
     Icons
 
+    Width
+
 */
 
 
@@ -45,6 +47,7 @@ $font-family: (
 
 $font-weight: (
     light: 300,
+    regular: 400,
     bold: 700,
 );
 
@@ -55,3 +58,15 @@ $font-weight: (
 // ----------------
 
 $icons-min-width: 20px;
+
+
+
+// ----------------
+// Width
+// ----------------
+
+// $space-tiny : 5px;
+// $space-small : 10px;
+$space-medium : 15px;
+// $space-large : 30px;
+// $space-extra : 50px;

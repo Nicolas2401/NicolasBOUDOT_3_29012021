@@ -1,0 +1,61 @@
+// Contenus seulement dispo sur les pages des restaurants
+
+
+// --------------------
+// Classes réutilisées
+// --------------------
+
+
+
+/* ----------------------------- */
+
+.restaurant {
+    position: relative;
+    background-color: map-get($color, white-900);
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+    padding: 30px 15px;
+    z-index: 1;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &__titre {
+            font-family: map-get($font-family, headings);
+            font-weight: map-get($font-weight, light);
+        }
+    }
+
+    &__menu {
+
+        &__etape {
+            margin-bottom: 50px;
+
+            &__titre {
+                position: relative;
+                display: block;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: map-get($color, 3);
+                    width: 35px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+
+    &__bouton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;   
+    }
+}

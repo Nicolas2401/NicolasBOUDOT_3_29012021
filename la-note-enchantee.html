@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood!</title>
+    <title>Ohmyfood! - La note enchantée</title>
     <!-- Google Font - Shrikhand | Roboto -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -36,59 +36,117 @@
                 </svg>
             </div>
         </div>
-        <div class="header__localisation">
-            <span class="header__localisation__ville">
-                <i class="fas fa-map-marker-alt"></i>
-                Paris, Belleville
-            </span>
-        </div>
     </header>
 
     <main>
-        <section class="reservation">
-            <h1 class="reservation__titre titre-section">Réserver le menu qui vous convient</h1>
-            <p class="reservation__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="" class="reservation__bouton btn btn-color-1-gradient-color-2" title="Explorer nos restaurants">Explorer nos restaurants</a>
-        </section>
-
-        <section class="fonctionnement">
-            <h2 class="fonctionnement__titre titre-section">Fonctionnement</h2>
-            <div class="fonctionnement__etapes">
-                <span class="fonctionnement__etapes__bouton" title="Choissisez un restaurant">
-                    <i class="fas fa-mobile-alt"></i>
-                    Choissisez un restaurant
-                </span>
-
-                <span class="fonctionnement__etapes__bouton" title="Composez votre menu">
-                    <i class="fas fa-list-ul"></i>
-                    Composez votre menu
-                </span>
-
-                <span class="fonctionnement__etapes__bouton" title="Dégustez au restaurant">
-                    <i class="fas fa-store"></i>
-                    Dégustez au restaurant
-                </span>
+        <div class="banniere">
+            <div class="banniere__image format format--16-9 cover">
+                <img src="./img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
             </div>
-        </section>
+        </div>
 
-        <section class="restaurants">
-            <h2 class="restaurants__titre titre-section">Restaurants</h2>
-            <div class="restaurants__liste">
-                <div class="card-restaurant is-new">
-                    <span class="card-restaurant__label">Nouveau</span>
-                    <div class="card-restaurant__image">
-                        <img src="./img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
-                    </div>
-                    <div class="card-restaurant__meta">
-                        <div class="card-restaurant__meta__infos">
-                            <h3 class="card-restaurant__meta__infos__titre">La note enchantée</h3>
-                            <span class="card-restaurant__meta__infos__ville">Charonne</span>
+        <section class="restaurant">
+            <div class="restaurant__heading">
+                <h1 class="restaurant__heading__titre">La note enchantée</h1>
+                <div class="btn-like">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="restaurant__menu">
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Entrées</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Ravioles de foie gras</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Accompagnés de leur crème à la truffe</span>
+                            <span class="card-plat__infos__prix">25€</span>
                         </div>
-                        <div class="card-restaurant__meta__like">
-                            <i class="far fa-heart"></i>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Caviar osciètre</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Sur blini à la farine de blé noir</span>
+                            <span class="card-plat__infos__prix">35€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Homard et espuma de potiron</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Mariné aux zestes d'orange</span>
+                            <span class="card-plat__infos__prix">20€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Foie gras de canard cuit entier</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Confiture de figue et pain toasté</span>
+                            <span class="card-plat__infos__prix">35€</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Plats</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Noix de coquilles Saint-Jacques</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Sur lit de purée de céleri-rave</span>
+                            <span class="card-plat__infos__prix">40€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Langoustine poêlée</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Purée de patate douce</span>
+                            <span class="card-plat__infos__prix">35€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Mijoté de queue de boeuf </h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Et riz sauvage aux zestes de citron</span>
+                            <span class="card-plat__infos__prix">44€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant__menu__etape">
+                    <span class="restaurant__menu__etape__titre">Desserts</span>
+                    
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Macaron noisette et chocolat</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Glace au caramel brun et sel de Guérande</span>
+                            <span class="card-plat__infos__prix">18€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Baba au rhum revisité</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Avec son coulis de citron</span>
+                            <span class="card-plat__infos__prix">22€</span>
+                        </div>
+                    </div>
+
+                    <div class="card-plat box-shadow">
+                        <h2 class="card-plat__titre">Tarte au citron meringuée</h2>
+                        <div class="card-plat__infos">
+                            <span class="card-plat__infos__details">Déstructurée</span>
+                            <span class="card-plat__infos__prix">23€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant__bouton">
+                <a href="" class="btn btn-color-1-gradient-color-2" title="Commander">Commander</a>
             </div>
         </section>
 
