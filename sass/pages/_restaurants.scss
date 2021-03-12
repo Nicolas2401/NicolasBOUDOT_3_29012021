@@ -33,6 +33,16 @@
 
         &__etape {
             margin-bottom: 50px;
+            opacity: 0;
+            counter-reset: etape-counter;
+            animation: fade-top 1s ease-in-out forwards;
+
+            $nb-etape: 3; //Entrée, Plat, Dessert
+            @for $i from 1 through $nb-etape {
+                &:nth-child(#{$i}) {
+                    animation-delay: calc(0.6s * #{$i});
+                }
+            }
 
             &__titre {
                 position: relative;

@@ -13,6 +13,41 @@
 
 /* ----------------------------- */
 
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: map-get($color, white);
+    z-index: 2;
+
+    animation: hide 0.4s 4s forwards ease-in-out;
+
+    &__logo {
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-50%);
+
+        & svg {
+            overflow: visible;
+
+            & path {
+                animation: bounce 2s ease-in-out infinite;
+
+                $item-to-animate : 8; //Nb de lettre à animer
+                @for $i from 1 through $item-to-animate {
+                    &:nth-child(#{$i}) {
+                        animation-delay: calc(#{$i} * 0.4s / #{$item-to-animate} );
+                    }
+                }
+            }
+        }
+    }
+}
+
 .reservation {
     background-color: map-get($color, white-900);
     text-align: center;

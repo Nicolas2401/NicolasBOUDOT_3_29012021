@@ -1,29 +1,67 @@
 .card-plat {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
     background-color: map-get($color, white);
     border-radius: 15px;
     margin-bottom: 15px;
-    padding: 10px 20px 10px 10px;
+    overflow: hidden;
 
-    &__titre {
-        font-size: 1.6rem;
-        margin-bottom: 0;
-    }
+    &__content {
+        padding: 10px 20px 10px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: 1;
 
-    &__infos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__details {
-            font-weight: map-get($font-weight, light);
+        &__titre {
+            font-size: 1.6rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-right: 15px;
+            margin-bottom: 0;
+        }
+    
+        &__infos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            &__details {
+                font-weight: map-get($font-weight, light);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 15px;
+            }
+    
+            &__prix {
+                font-weight: map-get($font-weight, bold);
+            }
+        }
+    }
+
+    &__checked {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: map-get($color, 3);
+        margin-right: -50px;
+        width: 50px;
+        transition: margin-right 0.4s;
+        overflow: hidden;
+
+        & i {
+            color: map-get($color, white);
+            font-size: 20px;
         }
 
-        &__prix {
-            font-weight: map-get($font-weight, bold);
+        .card-plat:hover & {
+            margin-right: 0;
+
+            & i {
+                animation: rotate 0.4s 0.1s forwards ease-in-out;
+            }
         }
     }
 }

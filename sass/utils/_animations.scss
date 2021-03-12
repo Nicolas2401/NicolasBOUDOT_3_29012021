@@ -1,0 +1,96 @@
+// Regroupe les animations
+
+/* ----------------------------- */
+/*          SOMMAIRE             */
+/* ----------------------------- */
+
+/* 
+    Bounce
+    Rotate
+    Like
+    Fade-Top
+    Hide
+*/
+
+
+/* Bounce */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    8.333% {
+        transform: translateY(-30px);
+    }
+    16.667% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    33.333% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Rotate */
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/* Like */
+@keyframes like {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* Fade-Top */
+@keyframes fade-top {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* Hide */
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+

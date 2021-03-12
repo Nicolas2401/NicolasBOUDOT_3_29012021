@@ -14,16 +14,40 @@
 
     // Bouton like
     &-like {
+        // Variables animation
+        $duration-main : 300ms;
+        $keyframe-target : 50; //50%
+        $calc-delay: calc(#{$duration-main} * .#{$keyframe-target});
 
         & > i {
+            position: relative;
             font-size: 2rem;
-    
+            
             &:hover {
                 cursor: pointer;
-                background: -webkit-linear-gradient(-100deg, map-get($color, 1) 35%, map-get($color, 2));
+
+                &::before {
+                    animation: hide 0s $calc-delay both ease-in-out;
+                }
+
+                &::after {
+                    animation: like $duration-main both ease-in-out;
+                }
+            }
+
+            &::after {
+                content: "\f004";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display: block;
+                background: -webkit-linear-gradient(-100deg, #9356DC 35%, #FF79DA);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
+                transform: scale(0);
             }
         }
     }

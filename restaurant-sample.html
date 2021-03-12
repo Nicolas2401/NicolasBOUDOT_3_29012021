@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1ac517afc1.js" crossorigin="anonymous"></script>
-    <!-- CSS post-SASS -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS post-SASS et post autoprefixed-->
+    <link href="css/prefixed/style.css" rel="stylesheet">
 </head>
 
 <!-- Variables à chercher et remplacer après duplication -->
@@ -68,10 +68,15 @@
                     <span class="restaurant__menu__etape__titre">Entrées</span>
                     
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">$titre-plat</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">$info-supp</span>
-                            <span class="card-plat__infos__prix">$prix</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">$titre-plat</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">$info-supp</span>
+                                <span class="card-plat__content__infos__prix">$prix</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -80,10 +85,15 @@
                     <span class="restaurant__menu__etape__titre">Plats</span>
                     
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">$titre-plat</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">$info-supp</span>
-                            <span class="card-plat__infos__prix">$prix</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">$titre-plat</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">$info-supp</span>
+                                <span class="card-plat__content__infos__prix">$prix</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -92,10 +102,15 @@
                     <span class="restaurant__menu__etape__titre">Desserts</span>
                     
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">$titre-plat</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">$info-supp</span>
-                            <span class="card-plat__infos__prix">$prix</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">$titre-plat</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">$info-supp</span>
+                                <span class="card-plat__content__infos__prix">$prix</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -104,17 +119,6 @@
                 <a href="" class="btn btn-color-1-gradient-color-2" title="Commander">Commander</a>
             </div>
         </section>
-
-        <!-- Font awesome -->
-        <i class="fas fa-map-marker-alt"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-utensils"></i>
-        <i class="fas fa-hands-helping"></i>
-        <i class="fas fa-mobile-alt"></i>
-        <i class="fas fa-list-ul"></i>
-        <i class="fas fa-store"></i>
     </main>
 
     <footer class="footer">

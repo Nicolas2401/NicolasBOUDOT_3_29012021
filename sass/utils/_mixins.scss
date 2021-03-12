@@ -3,11 +3,13 @@
     &-color-#{$bg1}-gradient-color-#{$bg2} {
         background: linear-gradient(-10deg, map-get($color, $bg1) 0%, map-get($color, $bg2) 80%);
         color: map-get($color, $font-color);
-        transition: background .4s;
+        box-shadow: 0 5px 15px map-get($color, grey-400);
+        transition: background .4s, box-shadow .15s;
 
         &:hover {
             background: linear-gradient(-10deg, lighten(map-get($color, $bg1), 5%) 0%, lighten(map-get($color, $bg2), 5%) 80%);
             color: map-get($color, $font-color);
+            box-shadow: 0 10px 20px map-get($color, grey-400);
         }
     }
 }
@@ -15,7 +17,7 @@
 // -------------------------------------------------------------------------------------------------------------
 
 // Expérimentation : Génération de tous les boutons possible avec les couleurs
-// Résultat : Fonctionne mais créer beaucoup de bouton. Les styles ne sont pas forcément pertinents
+// Résultat : Fonctionne mais créer beaucoup de boutons. Les styles ne sont pas forcément pertinents
 
 // @mixin btn-gradient($map) {
 //     @each $key, $value in $map {

@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1ac517afc1.js" crossorigin="anonymous"></script>
-    <!-- CSS post-SASS -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS post-SASS et post autoprefixed-->
+    <link href="css/prefixed/style.css" rel="stylesheet">
 </head>
 
 <!-- Variables à chercher et remplacer après duplication -->
@@ -62,28 +62,43 @@
             <div class="restaurant__menu">
                 <div class="restaurant__menu__etape">
                     <span class="restaurant__menu__etape__titre">Entrées</span>
-                    
+
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Tartare de thon</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Assaisonné au yuzu</span>
-                            <span class="card-plat__infos__prix">25€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Tartare de thon</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Assaisonné au yuzu</span>
+                                <span class="card-plat__content__infos__prix">25€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Bouchée de homard croustillant</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Et sa farandole de petits légumes</span>
-                            <span class="card-plat__infos__prix">35€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Bouchée de homard croustillant</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Et sa farandole de petits légumes</span>
+                                <span class="card-plat__content__infos__prix">35€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Velouté de cèpes</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Aux truffes</span>
-                            <span class="card-plat__infos__prix">20€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Velouté de cèpes</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Aux truffes</span>
+                                <span class="card-plat__content__infos__prix">20€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -92,26 +107,41 @@
                     <span class="restaurant__menu__etape__titre">Plats</span>
                     
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Poulet rôti aux herbes de Provence</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Et sa crème de truffe</span>
-                            <span class="card-plat__infos__prix">40€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Poulet rôti aux herbes de Provence</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Et sa crème de truffe</span>
+                                <span class="card-plat__content__infos__prix">40€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Langouste rôtie</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Et ses légumes de saison</span>
-                            <span class="card-plat__infos__prix">35€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Langouste rôtie</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Et ses légumes de saison</span>
+                                <span class="card-plat__content__infos__prix">35€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Côte de boeuf Angus</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Et sa purée de panais</span>
-                            <span class="card-plat__infos__prix">44€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Côte de boeuf Angus</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Et sa purée de panais</span>
+                                <span class="card-plat__content__infos__prix">44€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -120,26 +150,41 @@
                     <span class="restaurant__menu__etape__titre">Desserts</span>
                     
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Farandole de desserts</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Du chef</span>
-                            <span class="card-plat__infos__prix">18€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Farandole de desserts</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Du chef</span>
+                                <span class="card-plat__content__infos__prix">18€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Crème brulée</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">Revisitée</span>
-                            <span class="card-plat__infos__prix">22€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Crème brulée</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">Revisitée</span>
+                                <span class="card-plat__content__infos__prix">22€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
 
                     <div class="card-plat box-shadow">
-                        <h2 class="card-plat__titre">Tiramisu</h2>
-                        <div class="card-plat__infos">
-                            <span class="card-plat__infos__details">À la noisette</span>
-                            <span class="card-plat__infos__prix">23€</span>
+                        <div class="card-plat__content">
+                            <h2 class="card-plat__content__titre">Tiramisu</h2>
+                            <div class="card-plat__content__infos">
+                                <span class="card-plat__content__infos__details">À la noisette</span>
+                                <span class="card-plat__content__infos__prix">23€</span>
+                            </div>
+                        </div>
+                        <div class="card-plat__checked">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -148,17 +193,6 @@
                 <a href="" class="btn btn-color-1-gradient-color-2" title="Commander">Commander</a>
             </div>
         </section>
-
-        <!-- Font awesome -->
-        <i class="fas fa-map-marker-alt"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-utensils"></i>
-        <i class="fas fa-hands-helping"></i>
-        <i class="fas fa-mobile-alt"></i>
-        <i class="fas fa-list-ul"></i>
-        <i class="fas fa-store"></i>
     </main>
 
     <footer class="footer">
