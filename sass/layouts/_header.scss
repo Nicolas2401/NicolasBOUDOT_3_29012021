@@ -35,9 +35,14 @@
     }
 
     &__localisation {
+        display: none;
         background-color: map-get($color, grey-200);
         text-align: center;
         padding: 10px 15px;
+
+        .home & {
+            display: block;
+        }
 
         &__ville {
             position: relative;
